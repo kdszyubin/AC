@@ -92,7 +92,7 @@ struct KM
                 if (path(u))
                     break;
                 else
-                    if (update() == INF) break;//找不到值可以更新就停止当前u点的配对
+                    if (equ(update(), INF)) break;//找不到值可以更新就停止当前u点的配对
             }
         }
     }
